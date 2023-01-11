@@ -270,7 +270,7 @@ About*
 .about {
     position: relative;
     z-index: 1;
-    background: url("C:/Users/DELL%202/Desktop/test/assets/images/abstract1.png") no-repeat;
+    background: url("C:/Users/DELL%202/Desktop/test1/assets/images/abstract1.png") no-repeat;
     background-position: center;
     background-size: cover;
     padding: 120px 0;
@@ -423,4 +423,439 @@ margin-bottom: 30px ;
     color: var(--color2);
     margin-inline: auto ;
     
+}
+
+/* contact */
+.contact {
+    margin-bottom: 120px;
+}
+
+.contact-content { margin-bottom: 50px;}
+
+.contact-title { 
+    color: var(--color8);
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 800 !important;
+}
+
+.contact-banner img{
+    width: 100%;
+}
+
+.input-wrapper {
+     margin-bottom: 30px;
+}
+
+.input-label {
+    color: var(--color9);
+    font-size: var(--fs6);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    border-bottom: 1px solid var(--color5);
+    padding: 7px 0;
+    font-size: var(--fs6);
+}
+
+.input-field::placeholder{ color: var(--color4);}
+
+textarea {
+    max-height:300px ;
+    min-height: 100px;
+    height: 100px;
+    resize: vertical;
+
+}
+
+
+/* footer*/
+
+ footer { background: url("C:/Users/DELL%202/Desktop/test1/assets/images/abstract5.jpg");}
+
+ .footer-top {
+    padding: 80px 0 50px ;
+ }
+
+ .footer-brand { margin-bottom: 20px;}
+
+ footer .logo {margin-bottom: 30px ;}
+
+ .footer-text {
+    color: var(--color2);
+    font-size: var(--fs6);
+    margin-bottom: 20px;
+ }
+
+ .social-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+
+ }
+
+ .social-link {
+    color: azure;
+    font-size: var(--fs4);
+    margin-bottom: 10px;
+ }
+
+ .social-link:is(:hover, :focus) {color: black;}
+
+ .footer-link-list:not(:last-child) {
+    margin-bottom: 30px;
+ }
+
+.footer-link-list .link-title {
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    color: var(--color2);
+    font-size: var(--fs6);
+    margin-bottom: 10px;
+    max-width: 150px;
+}
+
+.footer-link:is(:hover, :focus) {color: black;}
+
+.footer-bottom {
+    padding: 20px 15px ;
+    border-top: 1px solid hsla(0, 0%, 10%, 0.2) ;
+}
+
+.copywright {
+    color: azure;
+    text-align: center;
+    font-size: var(--fs6);
+}
+
+.copywright a{
+    display: inline-block;
+    color:azure;
+}
+
+.copywright a:is(:hover, :focus) { color: var(--color5 );}
+
+
+.go-top {
+        position:fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 5;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(-45deg, var(--color5), var(--color1));
+        box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.25);
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        color: var(--color1);
+        font-size: 22px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: var(--transition);
+}
+
+.go-top.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+
+
+}
+
+
+
+
+/* responsive 450px */
+
+@media (min-width :450px) {
+
+    :root {
+        --fs1: 60px;
+    }
+
+    .h1,
+    .h2 { font-weight: 900;}
+    
+
+    .btn { padding-block: 15px;}
+
+    .navbar {
+        left: auto;
+        width: 300px;
+    }
+
+
+    .hero { padding: 140px  160px;}
+    .shape-content{
+        top: -70px;
+        right: -260px;
+    }
+
+    .about-card .card-title { padding-inline: 40px;}
+
+    .about-bottom-banner {
+        max-width: 400px;
+        margin-inline: auto;
+        margin-bottom: 40px;
+
+    }
+
+    .about-bottom-content { padding-inline: 50px;}
+
+
+    .features .h2 { --fs2: 32px;}
+
+    .cta-form {
+        display:flex;
+        justify-content:center;
+        align-items: flex-end;
+        gap: 30px;
+    }
+
+    .cta input { margin-bottom: 0;}
+     .cta .btn-secondary { min-width: max-content;}
+
+     .contact-title { --fs2: 32px;}
+
+     .contact-banner {
+        max-width: 300px;
+        margin-inline: auto;
+     }
+
+
+
+
+
+}
+
+/* responsive 560px */
+
+@media (min-width :560px) {
+
+   .container{
+    max-width: 550px;
+    margin-inline: auto;
+
+   }
+
+   .navbar-wrapper { position: relative;}
+
+   .navbar {
+    top:  calc(100% + 15px );
+    right: 0;
+   }
+
+
+
+   .hero-content,
+   .about-bottom-content { text-align: left;}
+
+   .hero .btn-primary,
+   .about-bottom .btn-secondary { margin-inline: 0;}
+   
+   .shape-content {
+    top: -156px;
+    right: -152px;
+
+   }
+
+
+
+   .footer-brand { margin-bottom: 40px;}
+
+   .footer-link-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+   }
+
+}
+
+@media (min-width: 768px) {
+
+
+    :root{
+
+        --fs2: 35px;
+        --fs4: 20px;
+    }
+
+    .container { max-width: 740px;}
+
+    .about-list { grid-template-columns:  1fr 1fr;}
+
+    .about-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .about-card .card-title { padding-inline:  0;}
+
+    .contact-title { --fs2: 42px;}
+}
+
+
+@media (min-width: 1024px) {
+    .container  { max-width: 950px;}
+
+
+    .navbar-menu-btn {display: none;}
+
+    .navbar {
+        max-height: unset;
+        visibility: visible;
+        position: static;
+        width: auto;
+        background: none;
+        pointer-events: all;
+        overflow: visible; 
+        display: flex;
+   }
+   .navbar-list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 20px;
+   }
+
+   .nav-link{
+    opacity: 1;
+    padding: 0 10px;
+   }
+
+   .navbar .btn-primary {
+        display: block ;
+   }
+
+
+   .hero-content { max-width: 550px;}
+
+    .hero-banner {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 500px;
+        padding-top: 500px;
+        background: url("C:/Users/DELL%202/Desktop/test1/assets/images/b3.jpg") no-repeat;
+        background-size: contain;
+        z-index: -2;
+    }
+
+    .about-top .section-text{
+        max-width: 650px;
+        margin-inline: auto; 
+    }
+    
+    .about-list { grid-template-columns: repeat(3, 1fr);}
+
+    .about-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+    .about-bottom-banner {
+        margin-bottom: 0;
+        height: 330px;
+    }
+
+    .about-bottom-content {
+        padding-inline: 0;
+        width: 50px;
+    }
+
+    .features :is(.section-title, .section-text ) {
+        max-width: 650px;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    .features-item-banner {
+            margin-inline: 0;
+            margin-bottom: 0; 
+    }
+
+    .features-item-content {
+        width: 50%;
+        text-align: left;
+
+    }
+
+    .features-item:last-child { flex-direction: row-reverse;}
+
+
+    .cta-card > * {
+        max-width: 500px;
+        margin-inline: auto;
+
+    }
+
+    
+    .contact .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    .contact-content {
+        max-width: 400px ;
+    }
+
+    .contact-title {
+        text-align: left;
+    }
+
+    .contact-form { width: 50%;}
+
+    .footer-top .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .footer-brand, 
+    .footer-link-list:not(:last-child) {
+        margin-bottom:0 ;
+    }
+
+    .footer-link-box {
+        grid-template-columns: repeat(0, 1fr );
+        gap: 50px;
+
+    }
+}
+
+
+@media (min-width:1200px) {
+    :root {
+        --fs2: 42px;
+    }
+
+    .container { max-width: 1150px;}
+
+    .hero-banner { right: 100px;}
+
+
+    .about-bottom-banner { height: 400px;}
+
+    .features .h2 { --fs2: 42px;}
+    .features :is(.section-text, .section-title) { max-width: 850px;}
+
+
 }
